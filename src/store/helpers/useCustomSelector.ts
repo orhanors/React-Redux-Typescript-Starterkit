@@ -1,0 +1,10 @@
+import {
+	useSelector as useReduxSelector,
+	TypedUseSelectorHook,
+} from "react-redux";
+
+import { RootState } from "../setup/reducer";
+
+const useSelector: TypedUseSelectorHook<RootState> = useReduxSelector;
+
+export default useSelector;
