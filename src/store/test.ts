@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { apiCall } from "./api";
+import { ApiCallType } from "./api";
 
 export interface IState {
 	data: object[];
@@ -39,14 +39,10 @@ export const { requested, success, failed } = slice.actions;
 
 export default slice.reducer;
 
-export const loadSearchResult = (keyword: string) => {
-	apiCall({
-		url: "https://jsonplaceholder.typicode.com/users",
-		//headers: {},
-		onStart: requested.type,
-		onSuccess: success.type,
-		onError: failed.type,
-	});
+export const testCallBody: ApiCallType = {
+	url: "https://jsonplaceholder.typicode.com/users",
+	//headers: {},
+	onStart: requested.type,
+	onSuccess: success.type,
+	onError: failed.type,
 };
-
-console.log("LOAD RESULT", loadSearchResult("123"));
