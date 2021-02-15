@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { ApiCallType } from "./api";
+import { apiCall, ApiCallType } from "./api";
 
 export interface IState {
 	data: object[];
@@ -39,10 +39,13 @@ export const { requested, success, failed } = slice.actions;
 
 export default slice.reducer;
 
-export const testCallBody: ApiCallType = {
-	url: "https://jsonplaceholder.typicode.com/users",
-	//headers: {},
-	onStart: requested.type,
-	onSuccess: success.type,
-	onError: failed.type,
-};
+export const testCallApi = (id: number) =>
+	apiCall({
+		url: `https://jsonplaceholder.typicode.com/users/${id}`,
+		//headers: {},
+		onStart: requested.type,
+		onSuccess: success.type,
+		onError: failed.type,
+	});
+
+//REDUX DUCKS
