@@ -39,13 +39,12 @@ export const { requested, success, failed } = slice.actions;
 
 export default slice.reducer;
 
-export const testCallApi = (id: number) =>
+export const testApiCall = (id: number) =>
 	apiCall({
 		url: `https://jsonplaceholder.typicode.com/users/${id}`,
+
 		//headers: {},
 		onStart: requested.type,
 		onSuccess: success.type,
 		onError: failed.type,
 	});
-
-//REDUX DUCKS
