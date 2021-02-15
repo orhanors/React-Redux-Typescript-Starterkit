@@ -4,13 +4,13 @@ import "./App.css";
 import { useDispatch } from "react-redux";
 import useCustomSelector from "./store/helpers/useCustomSelector";
 import { apiCall } from "./store/api";
-import { requested, success, failed, testCallBody } from "./store/test";
+import { requested, success, failed, testApiCall } from "./store/test";
 
 function App() {
 	const dispatch = useDispatch();
 	const { test } = useCustomSelector((store) => store);
 	const handleRedux = (e: React.MouseEvent<HTMLButtonElement>) => {
-		dispatch(apiCall(testCallBody));
+		dispatch(testApiCall());
 	};
 	return (
 		<div className='App'>
