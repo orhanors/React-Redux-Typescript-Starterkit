@@ -55,7 +55,7 @@ To dispatch and action you don't need to do extra work. You can use useDispatch 
 const dispatch = useDispatch();
 ```
 
-And there we go. If we want to call our test API we just need to dispatch this action. Let's call it with user id 1:
+If we want to call our test API we just need to dispatch this action. Let's call it with user id 1:
 
 ```javascript
 dispatch(testApiCall(1));
