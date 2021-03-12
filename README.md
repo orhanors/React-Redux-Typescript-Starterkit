@@ -1,6 +1,6 @@
 # React Redux Starterkit with ready to use API middleware
 
-React-Redux starter-kit is the result of personal effort and it uses [redux-toolkit](https://redux-toolkit.js.org/) and contains API middleware that is managed by axios. Since redux-toolkit automagically brings developer tools and thunk middleware as default, you don't need to carry about that. Also this kit encourages you to using [Redux Ducks](https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/) pattern.
+React-Redux starter-kit is the result of personal effort and it uses [redux-toolkit](https://redux-toolkit.js.org/) and contains API middleware that is managed by axios. It's created for managing redux state in a cleaner way and keeping API calls organized. Since redux-toolkit automagically brings developer tools and thunk middleware as default, you don't need to carry about that. Also this kit encourages you to using [Redux Ducks](https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/) pattern.
 
 ### How to install?
 
