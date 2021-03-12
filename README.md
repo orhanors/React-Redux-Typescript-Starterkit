@@ -61,7 +61,7 @@ If we want to call our test API we just need to dispatch this action. Let's call
 dispatch(testApiCall(1));
 ```
 
-There we go. If you go to developer tools you will see and output which looks like:
+There we go. If you go to developer tools you will see the output which looks like:
 
 
 ```javascript
