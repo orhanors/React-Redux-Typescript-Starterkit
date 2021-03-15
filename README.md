@@ -23,7 +23,7 @@ Everytime when we dispatch an action we trigger the first middleware in middlewa
 
 ### How to create new API call action?
 
-Ducks approach says that you should always keep your related actions,reducer and other functionalites in one places instead of seperating them. If you want to make an API call which is related to your "test feature" what you need to do is going "test file" which is located on your store folder and adding a function like that:
+Ducks approach says that you should always keep your related actions,reducer and other functionalites in one place instead of seperating them. If you want to make an API call which is related to your "test feature" what you need to do is going "test file" which is located on your store folder and adding a function like that:
 
 ```javascript
 export const testApiCall = (id: number) =>
